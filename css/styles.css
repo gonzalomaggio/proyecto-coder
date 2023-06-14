@@ -61,18 +61,25 @@ body {
     margin: 0 auto;
 }
 
+header div img{
+    width: 85%;
+    max-width: 275px;
+}
 
-header {
+
+/* header {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+
+
 header div img {
     width: 85%;
-    max-width: 275px;
-}
+    max-width: 275px; 
+}  
 
 /* ----Main---- */
 
