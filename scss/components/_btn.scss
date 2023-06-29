@@ -1,0 +1,38 @@
+.button {
+    border: 0.5px solid #fb6e42;
+    background-color: #fb6e42;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: "open Sans", sans-serif;
+    border-radius: 0.5rem;
+    
+
+    &--grey{
+        @extend.button;
+        border: 0.5px solid #d1d1d1;
+        background-color: #d1d1d1;
+        color: black;
+        }
+
+    &--small{
+        border: 0.5px solid #d1d1d1;
+        background-color: #d1d1d1;
+        color: black;
+        padding: 0.2rem 0.7rem;
+        font-size: 0.9rem;
+        font-family: "open Sans", sans-serif;
+        border-radius: 0.5rem;
+        margin: 0.5rem 0;
+
+        &:hover{
+            background-color: #f2f2f2;
+        }
+    }
+}
+
+
+
+
+
+
