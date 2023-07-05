@@ -84,7 +84,7 @@ main {
     font-size: 1.5rem;
   }
 }
-.button, .button--grey {
+.button, .button__submit, .button__submit--white, .button--grey {
   border: 0.5px solid #fb6e42;
   background-color: #fb6e42;
   color: white;
@@ -110,6 +110,14 @@ main {
 }
 .button--small:hover {
   background-color: #f2f2f2;
+}
+.button__submit, .button__submit--white {
+  text-align: center;
+  padding: 0;
+}
+.button__submit--white {
+  background-color: white;
+  color: #fb6e42;
 }
 
 nav div a img {
@@ -163,21 +171,6 @@ footer {
 
 label {
   display: none;
-}
-
-.btn__submit {
-  border: 0.5px solid #fb6e42;
-  background-color: #fb6e42;
-  color: white;
-  font-size: 1rem;
-  font-family: "open Sans", sans-serif;
-  border-radius: 0.5rem;
-  text-align: center;
-}
-
-.btn__submit--white {
-  background-color: white;
-  color: #fb6e42;
 }
 
 .footer__contacto {
@@ -661,15 +654,30 @@ footer img {
 /*---- Segunda seccion Coaching ----*/
 .consultoria__consultores {
   background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.consultoria__consultores h2 {
+  padding: 1rem;
+  text-align: center;
+}
+.consultoria__consultores p {
+  font-style: normal;
+  padding: 1rem;
 }
 .consultoria__consultores-fichas {
   padding: 0.5rem 0;
+  width: 100%;
 }
 .consultoria__consultores-fichas img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: solid black 0.8px;
+  border: solid white 0.8px;
+  position: relative;
+  bottom: 32px;
 }
 .consultoria__ficha1 {
   display: flex;
@@ -678,6 +686,98 @@ footer img {
   align-items: center;
   background-color: white;
   margin: 3rem;
+  box-shadow: 1px 1px 10px rgb(74, 73, 73);
+  max-width: 392px;
+  border-radius: 2%;
+}
+.consultoria__ficha1 a {
+  padding-bottom: 1rem;
+}
+.consultoria__ficha1 a i {
+  font-size: 2rem;
+  color: #fb6e42;
+}
+.consultoria__ficha1 hr {
+  width: 50%;
+  height: 2px;
+  background-color: black;
+  color: black;
+}
+
+/* ******************************************VERSION TABLET***********************************/
+@media (min-width: 768px) {
+  .consultoria__servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+    margin-bottom: 1rem;
+  }
+  .consultoria__servicios img {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    max-height: 493.73px;
+    object-fit: cover;
+    justify-self: center;
+  }
+  .consultoria__career {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .consultoria__linkedin {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  /*---- segunda seccion coaching ----*/
+  .consultoria__consultores-fichas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .consultoria__ficha1 {
+    width: 80%;
+    margin: 3rem 1rem;
+  }
+  /*---- Tercera seccion coaching ----*/
+  .contactanos img {
+    display: none;
+  }
+}
+/******************************VERSION DESKTOP************************/
+@media (min-width: 1024px) {
+  .consultoria__servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+  }
+  .consultoria__career {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .consultoria__career h2 {
+    margin: 0 0 8px;
+  }
+  .consultoria__linkedin {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  /*---- Segunda seccion coaching----*/
+  .consultoria__consultores-fichas {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .consultoria__consultores h2 {
+    margin-top: 2rem;
+  }
+  .consultoria__consultores p {
+    text-align: center;
+  }
+  /*--- Tercera seccion coaching ---*/
+  .contactanos img {
+    display: block;
+    max-height: 650px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

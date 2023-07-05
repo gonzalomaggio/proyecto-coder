@@ -29,7 +29,21 @@
             background-color: #f2f2f2;
         }
     }
+
+    &__submit{
+        @extend.button;
+        text-align: center;
+        padding: 0;
+
+        &--white{
+            @extend.button__submit;
+            background-color: white;
+            color: #fb6e42;
+        }
+    }
 }
+
+
 
 
 
