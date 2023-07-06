@@ -784,5 +784,66 @@ footer img {
     max-height: 650px;
   }
 }
+.empresas {
+  background-color: white;
+}
+
+.outplacement h1 {
+  text-align: center;
+  padding: 1.5rem;
+}
+.outplacement h2 {
+  text-align: center;
+}
+.outplacement p {
+  font-style: normal;
+  padding-top: 1rem;
+}
+
+/*--- segunda seccion empresas ---*/
+.ventajas__articulo {
+  background-color: #f2f2f2;
+}
+.ventajas__articulo p {
+  padding: 1rem;
+}
+.ventajas__articulo h2 {
+  padding-left: 1rem;
+}
+.ventajas__articulo button {
+  margin: 0.5rem 1rem;
+}
+.ventajas__desc {
+  border: solid black 2px;
+  margin: 1rem;
+  background-color: #f2f2f2;
+}
+.ventajas__desc p {
+  font-style: normal;
+  padding: 1rem 0 0 0;
+}
+.ventajas__desc i {
+  font-size: 2rem;
+  background-color: #fb6e42;
+  padding: 0.3rem 0.5rem;
+  color: white;
+  border-radius: 10%;
+}
+.ventajas__desc-item {
+  margin: 1rem;
+}
+
+/*---- tercera seccion empresas ----*/
+#linkedin__empresas {
+  padding-top: 1rem;
+  background-color: #f2f2f2;
+}
+#linkedin__empresas h2, #linkedin__empresas h3 {
+  text-align: center;
+}
+#linkedin__empresas p {
+  font-style: normal;
+  padding: 1rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
