@@ -801,6 +801,9 @@ footer img {
 }
 
 /*--- segunda seccion empresas ---*/
+.ventajas {
+  background-color: #f2f2f2;
+}
 .ventajas__articulo {
   background-color: #f2f2f2;
 }
@@ -838,12 +841,157 @@ footer img {
   padding-top: 1rem;
   background-color: #f2f2f2;
 }
-#linkedin__empresas h2, #linkedin__empresas h3 {
+#linkedin__empresas h2,
+#linkedin__empresas h3 {
   text-align: center;
 }
 #linkedin__empresas p {
   font-style: normal;
   padding: 1rem;
+}
+
+/*---- cuarta seccion empresas -----*/
+.clientes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.clientes h2 {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* ******************************************VERSION TABLET***********************************/
+@media (min-width: 768px) {
+  .outplacement img {
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+  }
+  /*---- tercera seccion empresas ----*/
+  #linkedin__empresas img {
+    max-height: 290px;
+    object-fit: cover;
+    width: 100%;
+  }
+  /*---- cuarta seccion empresas -----*/
+  .clientes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+  }
+  .clientes h2 {
+    grid-column: 1/3;
+  }
+  .clientes img {
+    justify-self: center;
+  }
+  .clientes__puntofrio {
+    grid-column: 1/3;
+  }
+}
+/*******************************VERSION DESKTOP***********************/
+@media (min-width: 1024px) {
+  .outplacement {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .outplacement__texto {
+    grid-column: 2/3;
+  }
+  .outplacement__texto h2 {
+    text-align: left;
+    padding-left: 1.5rem;
+    font-size: 3rem;
+  }
+  .outplacement__texto h1 {
+    text-align: left;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    font-size: 1.75rem;
+  }
+  .outplacement__texto p {
+    padding: 1rem 3rem 0 1.5rem;
+  }
+  .outplacement__imagen {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .outplacement__imagen img {
+    height: 100%;
+    max-height: 340px;
+    object-fit: cover;
+    width: 100%;
+  }
+  /*--- segunda seccion empresas ---*/
+  .ventajas {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .ventajas__articulo p {
+    padding: 2rem;
+    margin-bottom: 0;
+  }
+  .ventajas__articulo h2 {
+    padding-left: 2rem;
+  }
+  .ventajas__articulo button {
+    margin: 0.5rem 2rem;
+  }
+  .ventajas__desc-item {
+    display: flex;
+    gap: 1rem;
+  }
+  .ventajas__desc-item i {
+    align-self: flex-start;
+    font-size: 1.5rem;
+  }
+  .ventajas__desc-item p {
+    padding: 0;
+  }
+  /*---- tercera seccion empresas ----*/
+  #linkedin__empresas {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #linkedin__empresas-texto {
+    grid-column: 2/3;
+    padding-right: 1rem;
+  }
+  #linkedin__empresas-texto h2 {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  #linkedin__empresas-texto h3 {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  #linkedin__empresas img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100%;
+    object-fit: cover;
+  }
+  /*---- cuarta seccion empresas ----*/
+  .clientes {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 2fr;
+    padding: 0 2rem;
+  }
+  .clientes h2 {
+    grid-column: 1/6;
+    margin-top: 2rem;
+    text-decoration: underline;
+  }
+  .clientes__puntofrio {
+    grid-column: 5/6;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
