@@ -42,6 +42,7 @@
 
     .contactanos {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -65,6 +66,8 @@
             width: 90%;
             object-fit: cover;
             max-height: 650px;
+            grid-column: 2/3;
+            grid-row: 1/2;
         }
     }
 

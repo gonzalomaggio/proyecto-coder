@@ -1,0 +1,37 @@
+.contacto{
+    background-color: white;
+    margin-top: 1rem;
+    h1{
+        font-size: 1.2rem;
+        text-align: left;
+        font-family: "pt-sans", sans-serif;
+        padding-top: 1.5rem ;
+    }
+    h2{
+        font-size: 2rem
+    }
+    p{
+        padding-top: 1rem;
+    }
+}
+
+/*----- segunda seccion contacto ------*/
+
+.contactanos__proceso{
+    color: white;
+    padding: 3rem
+    }
+    h4{
+        font-weight: bolder;
+    }
+
+@media(min-width: 1024px){
+
+    .contactanos__proceso{
+        
+            grid-column:1/3
+               
+    }
+}
+
+
