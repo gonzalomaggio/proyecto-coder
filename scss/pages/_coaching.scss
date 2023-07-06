@@ -70,7 +70,7 @@
         align-items: center;
         background-color: white;
         margin: 3rem;
-        box-shadow: 1px 1px 10px rgb(74, 73, 73);
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
         max-width: 392px;
         border-radius: 2%;
         a{
@@ -87,6 +87,12 @@
             color: black;
         }
     }
+}
+
+/*---- Tercera seccion coaching ----*/
+
+.contactanos img {
+    display: none;
 }
 
 /* ******************************************VERSION TABLET***********************************/
