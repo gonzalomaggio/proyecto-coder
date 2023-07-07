@@ -90,8 +90,12 @@ main {
   color: white;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  font-family: "open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-radius: 0.5rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.button:hover, .button__submit:hover, .button__submit--white:hover, .button--grey:hover {
+  transform: scale(1.05);
 }
 .button--grey {
   border: 0.5px solid #d1d1d1;
@@ -104,16 +108,16 @@ main {
   color: black;
   padding: 0.2rem 0.7rem;
   font-size: 0.9rem;
-  font-family: "open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   border-radius: 0.5rem;
   margin: 0.5rem 0;
 }
 .button--small:hover {
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
 }
 .button__submit, .button__submit--white {
   text-align: center;
-  padding: 0;
+  padding: 0.2rem;
 }
 .button__submit--white {
   background-color: white;
@@ -138,7 +142,67 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
+  margin-bottom: 1rem;
+}
+footer .contactos {
+  padding-bottom: 2rem;
+}
+footer .contactos__lista {
+  display: grid;
+  grid-template-columns: 25% 50% r 25%;
+  grid-template-rows: 1fr 1fr 2fr;
+  gap: 0.75rem;
+  justify-content: center;
+  align-content: start;
+  margin-bottom: 1rem;
+  padding: 0;
+  margin: 0;
+}
+footer .contactos__lista-legales {
+  grid-column: 2/3;
+  justify-self: center;
+  font-family: "Open Sans", sans-serif;
+}
+footer .contactos__lista-cookies {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: center;
+  font-family: "Open Sans", sans-serif;
+}
+footer .contactos__lista-instagram {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+  font-size: 1.25rem;
+}
+footer .contactos__lista-instagram a {
+  color: #c7c7c7;
+}
+footer .contactos__lista-linkedin {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.25rem;
+}
+footer .contactos__lista-linkedin a {
+  color: #c7c7c7;
+}
+footer .contactos__lista-mail {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  justify-self: end;
+  align-self: center;
+  font-size: 1.25rem;
+}
+footer .contactos__lista-mail a {
+  color: #c7c7c7;
+}
+footer img {
+  width: 85%;
+  max-width: 221px;
+  padding: 0;
   margin-bottom: 1rem;
 }
 
@@ -151,100 +215,22 @@ footer {
   gap: 1rem;
   background-color: white;
   margin: 1rem;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
-
 .suscripcion h3 {
   text-align: center;
 }
-
 .suscripcion form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 .suscripcion form input {
   width: 300px;
-  height: 25px;
   font-size: 0.9rem;
 }
-
-label {
+.suscripcion form label {
   display: none;
-}
-
-.footer__contacto {
-  display: grid;
-  grid-template-columns: 25% 50% r 25%;
-  grid-template-rows: 1fr 1fr 2fr;
-  gap: 0.75rem;
-  justify-content: center;
-  align-content: start;
-  margin-bottom: 1rem;
-}
-
-.footer__legales {
-  grid-column: 2/3;
-  justify-self: center;
-  font-family: "Open sans", sans-serif;
-}
-
-.footer__cookies {
-  grid-column: 2/3;
-  grid-row: 2/3;
-  justify-self: center;
-  font-family: "open Sans", sans-serif;
-}
-
-.footer__instagram {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  align-self: center;
-  font-size: 1.25rem;
-}
-
-.footer__instagram a {
-  color: #c7c7c7;
-}
-
-.footer__linkedin {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  align-self: center;
-  justify-self: center;
-  font-size: 1.25rem;
-}
-
-.footer__linkedin a {
-  color: #c7c7c7;
-}
-
-.footer__mail {
-  grid-column: 2/3;
-  grid-row: 3/4;
-  justify-self: end;
-  align-self: center;
-  font-size: 1.25rem;
-}
-
-.footer__mail a {
-  color: #c7c7c7;
-}
-
-footer img {
-  width: 85%;
-  max-width: 221px;
-  padding: 0;
-  margin-bottom: 1rem;
-}
-
-.contacto__container {
-  padding-bottom: 2rem;
-}
-
-.contacto__container ul {
-  padding: 0;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -252,7 +238,7 @@ footer img {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .contacto__container {
+  footer .contactos {
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -288,10 +274,20 @@ footer img {
   display: block;
   color: white;
 }
-.contactanos__formulario input,
+.contactanos__formulario input {
+  width: 100%;
+  border: none;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
 .contactanos__formulario textarea {
   width: 100%;
-  border-color: white;
+  border: none;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+  height: 104px;
+}
+.contactanos__formulario #accion {
+  border: none;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
 }
 .contactanos h2 {
   padding-top: 2.5rem;
@@ -332,7 +328,7 @@ footer img {
 }
 /*--- Primera sección index ---*/
 .presentacion {
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
 }
 .presentacion__articulo {
   display: flex;
@@ -366,6 +362,10 @@ footer img {
   padding: 1rem;
   margin: 1rem auto;
   max-width: 480px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.servicios__tarjeta:hover {
+  box-shadow: 0 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 .servicios__tarjeta-icono {
   width: 30%;
@@ -378,7 +378,7 @@ footer img {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background-color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 1rem;
 }
 .potenciate img {
@@ -399,11 +399,13 @@ footer img {
   align-items: center;
   gap: 1rem;
   padding: 2rem 1rem;
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
 }
 .testimonios__titulos {
   text-align: center;
-  padding: 0.5rem;
+}
+.testimonios__titulos h3 {
+  padding: 1rem;
 }
 .testimonios__tarjeta, .testimonios__tarjeta--orange {
   display: flex;
@@ -413,6 +415,7 @@ footer img {
   padding: 1rem;
   margin: 1rem auto;
   max-width: 480px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .testimonios__tarjeta--orange {
   background-color: #fb6e42;
@@ -539,11 +542,12 @@ footer img {
 /* --- Segunda sección Curriculum */
 .cvwriting article {
   padding: 1rem 1rem 0 1rem;
-  background-color: #d1d1d1;
+  background-color: #f2f2f1;
 }
 .cvwriting article p {
   margin-bottom: 0;
   font-style: normal;
+  padding-right: 1rem;
 }
 .cvwriting h3 {
   text-align: center;
@@ -656,7 +660,7 @@ footer img {
 
 /*---- Segunda seccion Coaching ----*/
 .consultoria__consultores {
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -789,6 +793,7 @@ footer img {
 }
 .empresas {
   background-color: white;
+  padding-top: 1.5rem;
 }
 
 .outplacement h1 {
@@ -805,10 +810,10 @@ footer img {
 
 /*--- segunda seccion empresas ---*/
 .ventajas {
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
 }
 .ventajas__articulo {
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
 }
 .ventajas__articulo p {
   padding: 1rem;
@@ -822,7 +827,7 @@ footer img {
 .ventajas__desc {
   border: solid black 2px;
   margin: 1rem;
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
 }
 .ventajas__desc p {
   font-style: normal;
@@ -842,7 +847,7 @@ footer img {
 /*---- tercera seccion empresas ----*/
 #linkedin__empresas {
   padding-top: 1rem;
-  background-color: #f2f2f2;
+  background-color: #f2f2f1;
 }
 #linkedin__empresas h2,
 #linkedin__empresas h3 {
@@ -933,7 +938,7 @@ footer img {
   .ventajas {
     display: grid;
     grid-template-columns: 40% 60%;
-    background-color: #f2f2f2;
+    background-color: #f2f2f1;
     padding: 1rem;
     gap: 1rem;
   }
@@ -1004,7 +1009,7 @@ footer img {
 .contacto h1 {
   font-size: 1.2rem;
   text-align: left;
-  font-family: "pt-sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   padding-top: 1.5rem;
 }
 .contacto h2 {
@@ -1036,7 +1041,7 @@ h4 {
 .contacto h1 {
   font-size: 1.2rem;
   text-align: left;
-  font-family: "pt-sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   padding-top: 1.5rem;
 }
 .contacto h2 {

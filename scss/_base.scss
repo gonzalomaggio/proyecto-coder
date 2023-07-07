@@ -1,3 +1,16 @@
+$color-orange:#fb6e42;
+$color-greyf2:#f2f2f1;
+$color-greyd1: #d1d1d1;
+$color-greyc7:#c7c7c7;
+$color-white: white;
+$color-black: black;
+$color-sombra: rgba(0,0,0,.1);
+$ff-oswald: "Oswald", sans-serif;
+$ff-ptsans: "PT Sans", sans-serif;
+$ff-opensasns: "Open Sans", sans-serif;
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +30,10 @@ img {
     max-width: 100%;
 }
 
+
 h1 {
     font-size: 2rem;
-    font-family: "Oswald", sans-serif;
+    font-family: $ff-oswald;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 120%;
@@ -28,24 +42,24 @@ h1 {
 
 H2 {
     font-size: 1.75rem;
-    font-family: "Oswald", sans-serif;
+    font-family: $ff-oswald;
     font-weight: 600;
     line-height: 100%;
 }
 
 h3 {
     font-size: 1.25rem;
-    font-family: "PT Sans", sans-serif;
+    font-family: $ff-ptsans;
 
 }
 
 h4 {
-    font-family: "Open Sans", sans-serif;
+    font-family: $ff-opensasns;
     font-size: 1rem;
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    font-family: $ff-opensasns;
     font-size: 1rem;
     font-style: oblique;
 }

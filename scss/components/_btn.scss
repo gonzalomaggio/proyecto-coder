@@ -1,44 +1,48 @@
 .button {
-    border: 0.5px solid #fb6e42;
-    background-color: #fb6e42;
-    color: white;
+    border: 0.5px solid $color-orange;
+    background-color: $color-orange;
+    color: $color-white;
     padding: 0.5rem 1rem;
     font-size: 1rem;
-    font-family: "open Sans", sans-serif;
+    font-family: $ff-opensasns;
     border-radius: 0.5rem;
+    box-shadow: 0 1px 1px 0 $color-sombra;
+    &:hover{
+        transform: scale(1.05);
+    }
     
 
     &--grey{
         @extend.button;
-        border: 0.5px solid #d1d1d1;
-        background-color: #d1d1d1;
-        color: black;
+        border: 0.5px solid $color-greyd1;
+        background-color: $color-greyd1;
+        color: $color-black;
         }
 
     &--small{
-        border: 0.5px solid #d1d1d1;
-        background-color: #d1d1d1;
-        color: black;
+        border: 0.5px solid $color-greyd1;
+        background-color: $color-greyd1;
+        color: $color-black;
         padding: 0.2rem 0.7rem;
         font-size: 0.9rem;
-        font-family: "open Sans", sans-serif;
+        font-family: $ff-opensasns;
         border-radius: 0.5rem;
         margin: 0.5rem 0;
 
         &:hover{
-            background-color: #f2f2f2;
+            background-color: $color-greyf2;
         }
     }
 
     &__submit{
         @extend.button;
         text-align: center;
-        padding: 0;
+        padding: 0.2rem;
 
         &--white{
             @extend.button__submit;
-            background-color: white;
-            color: #fb6e42;
+            background-color: $color-white;
+            color: $color-orange;
         }
     }
 }

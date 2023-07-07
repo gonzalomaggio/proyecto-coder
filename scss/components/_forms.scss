@@ -1,5 +1,5 @@
 .contactanos {
-    background-color: #fb6e42;
+    background-color: $color-orange;
 
     &__formulario {
         display: flex;
@@ -10,26 +10,40 @@
         justify-content: center;
 
         legend {
-            color: white;
+            color: $color-white;
             text-align: center;
         }
 
         label {
             display: block;
-            color: white
+            color: $color-white
         }
 
-        input,
-        textarea {
+        input {
             width: 100%;
-            border-color: white;
+            border:none;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+            
+        }
+
+        textarea{
+            width: 100%;
+            border:none;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
+            height: 104px;
+            
+        }
+
+        #accion{
+            border:none;
+            box-shadow: 0 1px 1px 0 rgba(0,0,0,.3);
         }
     }
 
     h2 {
         padding-top: 2.5rem;
         text-align: center;
-        color: white;
+        color: $color-white;
     }
 
     img {

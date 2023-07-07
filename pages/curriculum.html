@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Curriculum | Leader</title>
 </head>
@@ -28,6 +29,8 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav align-items-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="curriculum.html">Curriculum</a>
                         </li>
@@ -52,40 +55,46 @@
         <section>
             <div>
                 <h1>Servicios de carrera</h1>
-                <p class="curriculum__encabezado">Llevamos 10 años apoyando procesos de Transición Profesional y Búsqueda de Empleo. Ayudamos a 400
-                personas al año a dar continuidad o transformar sus carreras profesionales.</p>
+                <p class="curriculum__encabezado">Llevamos 10 años apoyando procesos de Transición Profesional y
+                    Búsqueda de Empleo. Ayudamos a 400
+                    personas al año a dar continuidad o transformar sus carreras profesionales.</p>
             </div>
 
             <div class="curriculum__servicios">
                 <article>
                     <h2>1. Curriculum</h2>
                     <p>Creamos tu CV con análisis, asesoría, estrategia, uso inteligente de términos clave, redacción
-                    profesional y diseño gráfico. Obtendrás un CV con una propuesta de valor diferenciadora, orientado a
-                    tus objetivos de manera eficiente.</p>
+                        profesional y diseño gráfico. Obtendrás un CV con una propuesta de valor diferenciadora,
+                        orientado a
+                        tus objetivos de manera eficiente.</p>
                 </article>
 
                 <article>
                     <h2>2. LinkedIn</h2>
-                    <p>Te posicionamos para generar y atraer más contactos relevantes a tu red de networking, transmitimos
-                    tu propuesta de valor profesional y ponemos todo a punto para que empieces a explorar oportunidades
-                    laborales o cumplir otros objetivos de carrera profesional, con éxito.</p>
+                    <p>Te posicionamos para generar y atraer más contactos relevantes a tu red de networking,
+                        transmitimos
+                        tu propuesta de valor profesional y ponemos todo a punto para que empieces a explorar
+                        oportunidades
+                        laborales o cumplir otros objetivos de carrera profesional, con éxito.</p>
                 </article>
 
                 <img src="../img/curriculum.jpg" alt="hombre con laptop sonriendo">
-            
+
 
                 <article class="curriculum__carta">
                     <h2 class="curriculum__carta-titulo">3. Carta</h2>
                     <p>Hacemos la redacción con el lenguaje, el discurso y la estructura perfecta. Argumentamos tus
-                    motivaciones y los fundamentos que dan forma a tu propuesta de valor, orientándote de manera
-                    coherente hacia los objetivos profesionales.</p>
+                        motivaciones y los fundamentos que dan forma a tu propuesta de valor, orientándote de manera
+                        coherente hacia los objetivos profesionales.</p>
                 </article>
 
                 <article class="curriculum__traduccion">
                     <h2>4. Traducción del CV</h2>
-                    <p>Hacemos la Traducción de Currículum en inglés a partir del texto previamente preparado y validado en
-                    español, o directamente hacemos la redacción de currículum en inglés, si solo te interesa obtener el
-                    CV en este idioma.</p>
+                    <p>Hacemos la Traducción de Currículum en inglés a partir del texto previamente preparado y validado
+                        en
+                        español, o directamente hacemos la redacción de currículum en inglés, si solo te interesa
+                        obtener el
+                        CV en este idioma.</p>
                 </article>
             </div>
         </section>
@@ -100,9 +109,9 @@
                     Applicant Tracking System) para que superes los procesos de selección y los cribados curriculares
                     con garantías.</p>
             </article>
-            
+
             <img src="../img/cvwriting.jpg" alt="un hombre y una mujer leyendo un papel">
-            
+
         </section>
 
         <section class="contactanos">
@@ -165,16 +174,16 @@
 
         </div>
 
-        <div class="contacto__container">
-            <ul class="footer__contacto">
-                <li class="footer__legales">Información Legal</li>
-                <li class="footer__cookies">Política de Cookies</li>
-                <li class="footer__instagram"><a href="https://www.instagram.com/" target="_blank"><i
+        <div class="contactos">
+            <ul class="contactos__lista">
+                <li class="contactos__lista-legales">Información Legal</li>
+                <li class="contactos__lista-cookies">Política de Cookies</li>
+                <li class="contactos__lista-instagram"><a href="https://www.instagram.com/" target="_blank"><i
                             class="bi bi-instagram"></i></a></li>
-                <li class="footer__linkedin"><a href="https://ar.linkedin.com/" target="_blank"><i
+                <li class="contactos__lista-linkedin"><a href="https://ar.linkedin.com/" target="_blank"><i
                             class="bi bi-linkedin"></i></a>
                 </li>
-                <li class="footer__mail"><a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe"
+                <li class="contactos__lista-mail"><a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe"
                         target="_blank"><i class="bi bi-envelope-fill"></i></a>
         </div>
 
@@ -187,6 +196,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
