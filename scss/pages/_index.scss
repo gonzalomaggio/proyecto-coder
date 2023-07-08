@@ -28,6 +28,10 @@
         color: $color-white;
     }
 
+    
+    
+    
+
     &__tarjeta {
         display: flex;
         flex-direction: column;
@@ -43,12 +47,18 @@
             box-shadow: 0 1px 1px 5px $color-sombra;
             
         }
+        &-icono{
+            width: 30%;
+            transition-duration: 2s;
+            &:hover{
+                transform: rotate(360deg) scale(1.2);
+                
+            }
+        }
         
     } 
 
-    &__tarjeta-icono {
-        width: 30%;
-    }
+    
 }
 
 /* --- Tercera seccion index */
@@ -59,7 +69,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    background-color: $color-sombra;
+    background-color: $color-greyf2;
     padding: 1rem;
 
     img {

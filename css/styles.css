@@ -369,6 +369,10 @@ footer img {
 }
 .servicios__tarjeta-icono {
   width: 30%;
+  transition-duration: 2s;
+}
+.servicios__tarjeta-icono:hover {
+  transform: rotate(360deg) scale(1.2);
 }
 
 /* --- Tercera seccion index */
@@ -378,7 +382,7 @@ footer img {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #f2f2f1;
   padding: 1rem;
 }
 .potenciate img {
@@ -697,14 +701,15 @@ footer img {
   max-width: 392px;
   border-radius: 2%;
 }
-.consultoria__ficha1 a {
+.consultoria a {
   padding-bottom: 1rem;
 }
-.consultoria__ficha1 a i {
+.consultoria a i {
   font-size: 2rem;
   color: #fb6e42;
 }
-.consultoria__ficha1 hr {
+
+hr {
   width: 50%;
   height: 2px;
   background-color: black;
@@ -814,6 +819,7 @@ footer img {
 }
 .ventajas__articulo {
   background-color: #f2f2f1;
+  padding-top: 3rem;
 }
 .ventajas__articulo p {
   padding: 1rem;
@@ -826,7 +832,7 @@ footer img {
 }
 .ventajas__desc {
   border: solid black 2px;
-  margin: 1rem;
+  margin: 4rem;
   background-color: #f2f2f1;
 }
 .ventajas__desc p {

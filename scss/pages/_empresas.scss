@@ -26,9 +26,11 @@
 
 .ventajas {
     background-color: $color-greyf2;
+    
 
     &__articulo {
         background-color: $color-greyf2;
+        padding-top: 3rem;
 
         p {
             padding: 1rem;
@@ -45,8 +47,9 @@
 
     &__desc {
         border: solid $color-black 2px;
-        margin: 1rem;
+        margin: 4rem;
         background-color: $color-greyf2;
+        
 
         p {
             font-style: normal;

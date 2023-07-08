@@ -32,19 +32,19 @@
 .consultoria {
     &__consultores {
         background-color: $color-greyf2;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
 
 
-        h2{
+
+        h2 {
             padding: 1rem;
             text-align: center;
         }
 
-        p{
+        p {
             font-style: normal;
             padding: 1rem;
         }
@@ -52,6 +52,7 @@
         &-fichas {
             padding: 0.5rem 0;
             width: 100%;
+
             img {
                 width: 100px;
                 height: 100px;
@@ -63,7 +64,7 @@
         }
     }
 
-    &__ficha1{
+    &__ficha1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,21 +74,31 @@
         box-shadow: 0 1px 1px 0 $color-sombra;
         max-width: 392px;
         border-radius: 2%;
-        a{
-            padding-bottom: 1rem;
-            i{
-                font-size: 2rem;
-                color:$color-orange;
-            }    
-        }
-        hr{
-            width: 50%;
-            height: 2px;
-            background-color: $color-black;
-            color: $color-black;
+
+
+    }
+
+    a {
+        padding-bottom: 1rem;
+
+        i {
+            font-size: 2rem;
+            color: $color-orange;
+
+
+
         }
     }
 }
+
+hr {
+    width: 50%;
+    height: 2px;
+    background-color: $color-black;
+    color: $color-black;
+}
+
+
 
 /*---- Tercera seccion coaching ----*/
 
@@ -129,28 +140,29 @@
 
     /*---- segunda seccion coaching ----*/
 
-    .consultoria{
-        &__consultores{
-            &-fichas{
+    .consultoria {
+        &__consultores {
+            &-fichas {
                 display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
             }
         }
-        &__ficha1{
+
+        &__ficha1 {
             width: 80%;
             margin: 3rem 1rem;
         }
-        
+
     }
 
     /*---- Tercera seccion coaching ----*/
 
-    .contactanos{
-        img{
-            display:none
+    .contactanos {
+        img {
+            display: none
         }
     }
 }
@@ -184,16 +196,18 @@
 
     /*---- Segunda seccion coaching----*/
 
-    .consultoria{
-        &__consultores{
-            &-fichas{
+    .consultoria {
+        &__consultores {
+            &-fichas {
                 flex-direction: row;
                 justify-content: space-around;
             }
-            h2{
+
+            h2 {
                 margin-top: 2rem;
             }
-            p{
+
+            p {
                 text-align: center;
             }
         }
@@ -201,11 +215,10 @@
 
     /*--- Tercera seccion coaching ---*/
 
-    .contactanos{
-        img{
-            display:block;
+    .contactanos {
+        img {
+            display: block;
             max-height: 650px;
         }
     }
 }
-
