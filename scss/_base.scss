@@ -1,10 +1,10 @@
-$color-orange:#fb6e42;
-$color-greyf2:#f2f2f1;
+$color-orange: #fb6e42;
+$color-greyf2: #f2f2f1;
 $color-greyd1: #d1d1d1;
-$color-greyc7:#c7c7c7;
+$color-greyc7: #c7c7c7;
 $color-white: white;
 $color-black: black;
-$color-sombra: rgba(0,0,0,.1);
+$color-sombra: rgba(0, 0, 0, .1);
 $ff-oswald: "Oswald", sans-serif;
 $ff-ptsans: "PT Sans", sans-serif;
 $ff-opensasns: "Open Sans", sans-serif;
@@ -108,5 +108,31 @@ main {
 
     h3 {
         font-size: 1.5rem;
+    }
+
+}
+
+.text-shadow-drop-center {
+    -webkit-animation: text-shadow-drop-center 0.6s infinite both;
+    animation: text-shadow-drop-center 0.6s infinite both;
+}
+
+@-webkit-keyframes text-shadow-drop-center {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+    }
+}
+
+@keyframes text-shadow-drop-center {
+    0% {
+        text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
     }
 }

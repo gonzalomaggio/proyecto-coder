@@ -84,6 +84,27 @@ main {
     font-size: 1.5rem;
   }
 }
+.text-shadow-drop-center {
+  -webkit-animation: text-shadow-drop-center 0.6s infinite both;
+  animation: text-shadow-drop-center 0.6s infinite both;
+}
+
+@-webkit-keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}
 .button, .button__submit, .button__submit--white, .button--grey {
   border: 0.5px solid #fb6e42;
   background-color: #fb6e42;
