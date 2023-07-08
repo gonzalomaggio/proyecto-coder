@@ -853,7 +853,7 @@ hr {
 }
 .ventajas__desc {
   border: solid black 2px;
-  margin: 4rem;
+  margin: 4rem 0.5rem;
   background-color: #f2f2f1;
 }
 .ventajas__desc p {
@@ -875,6 +875,7 @@ hr {
 #linkedin__empresas {
   padding-top: 1rem;
   background-color: #f2f2f1;
+  margin-top: -2rem;
 }
 #linkedin__empresas h2,
 #linkedin__empresas h3 {
@@ -892,7 +893,7 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 .clientes h2 {
   text-align: center;
