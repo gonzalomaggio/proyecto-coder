@@ -1,12 +1,21 @@
-nav div a img {
-    width: 85%;
-    max-width: 260px;
+nav {
+    div {
+        a {
+            img {
+                width: 85%;
+                max-width: 260px;
+            }
+        }
+    }
 }
 
 .pl-0 {
     padding-left: 0;
 }
 
-.nav-link:hover{
-    color: $color-orange;
+.nav-link {
+    font-family: $ff-opensasns;
+    &:hover {
+        color: $color-orange;
+    }
 }

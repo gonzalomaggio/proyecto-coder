@@ -74,18 +74,18 @@
         box-shadow: 0 1px 1px 0 $color-sombra;
         max-width: 392px;
         border-radius: 2%;
-
-
     }
 
     a {
         padding-bottom: 1rem;
 
+        &:hover {
+            transform: scale(1.05);
+        }
+
         i {
             font-size: 2rem;
             color: $color-orange;
-
-
 
         }
     }
@@ -102,8 +102,10 @@ hr {
 
 /*---- Tercera seccion coaching ----*/
 
-.contactanos img {
-    display: none;
+.contactanos {
+    img {
+        display: none;
+    }
 }
 
 /* ******************************************VERSION TABLET***********************************/

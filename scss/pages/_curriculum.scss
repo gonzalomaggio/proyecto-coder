@@ -49,8 +49,10 @@
 
 /* --- Tercera seccion curriculum --- */
 
-.contactanos img {
-    display: none;
+.contactanos {
+    img {
+        display: none;
+    }
 }
 
 /* ******************************************VERSION TABLET***********************************/
@@ -161,8 +163,8 @@
 
     //---- Tercera seccion curriculum ----/
 
-    .contactanos img{
-        display:block;
+    .contactanos img {
+        display: block;
         max-height: 650px
     }
 }

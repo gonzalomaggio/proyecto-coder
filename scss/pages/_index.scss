@@ -26,12 +26,12 @@
         padding: 1rem;
         text-align: center;
         color: $color-white;
-        
+
     }
 
-    
-    
-    
+
+
+
 
     &__tarjeta {
         display: flex;
@@ -44,22 +44,25 @@
         margin: 1rem auto;
         max-width: 480px;
         box-shadow: 0 1px 1px 0 $color-sombra;
-        &:hover{
+
+        &:hover {
             box-shadow: 0 1px 1px 5px $color-sombra;
-            
+
         }
-        &-icono{
+
+        &-icono {
             width: 30%;
             transition-duration: 2s;
-            &:hover{
+
+            &:hover {
                 transform: rotate(360deg) scale(1.2);
-                
+
             }
         }
-        
-    } 
 
-    
+    }
+
+
 }
 
 /* --- Tercera seccion index */
@@ -98,10 +101,11 @@
 
     &__titulos {
         text-align: center;
-        h3{
+
+        h3 {
             padding: 1rem;
         }
-        
+
     }
 
     &__tarjeta {
@@ -113,7 +117,7 @@
         margin: 1rem auto;
         max-width: 480px;
         box-shadow: 0 1px 1px 0 $color-sombra;
-        
+
 
         &--orange {
             @extend.testimonios__tarjeta;
@@ -196,9 +200,11 @@
 
     /* ---Cuarta seccion index--- */
 
-    .testimonios__tarjeta img {
-        width: 75px;
-        height: 75px;
+    .testimonios__tarjeta {
+        img {
+            width: 75px;
+            height: 75px;
+        }
     }
 
 }
@@ -209,8 +215,10 @@
 
     /* --- Primera seccion index --- */
 
-    .presentacion__articulo h3 {
-        padding-left: 3rem;
+    .presentacion__articulo {
+        h3 {
+            padding-left: 3rem;
+        }
     }
 
     /* --- Segunda sección Index --- */
@@ -258,4 +266,3 @@
 
     }
 }
-
